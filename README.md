@@ -1,9 +1,11 @@
 How to Set UP Project
 -------------------
 
- --Clone repository on you machine, where your local server can access/run code. 
- -- Adjust your configuration files. (Database credentials) config/db.php
- -- Update email addresss in config/params.php '
+Clone repository on you machine, where your local server can access/run code. 
+
+Adjust your configuration files. (Database credentials) config/db.php
+
+Update email addresss in config/params.php '
 
 ```
  return [
