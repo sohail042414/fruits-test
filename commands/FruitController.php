@@ -69,6 +69,7 @@ class FruitController extends Controller
 
         if($importedCount > 0){
             $this->sendAdminEmail();
+            echo "\n Imported Fruits Count :".$importedCount;
         }                
         return ExitCode::OK;
     }
@@ -76,8 +77,8 @@ class FruitController extends Controller
     private function sendAdminEmail(){
 
         Yii::$app->mailer->compose('fruits-imported')
-        ->setFrom('info@fruits.com')
-        ->setTo('yii-developer@gmail.com')
+        ->setFrom(Yii::$app->params['senderEmail'])
+        ->setTo(Yii::$app->params['adminEmail'])
         ->setSubject('Fruits Imported')
         ->send();
 
