@@ -5,20 +5,21 @@ How to Set UP Project
  -- Adjust your configuration files. (Database credentials) config/db.php
  -- Update email addresss in config/params.php '
 
+```
  return [
     'adminEmail' => 'admin@example.com',
     'senderEmail' => 'noreply@example.com',
     'senderName' => 'Example.com mailer',
 ];
-
+```
 Run 
-    -- composer install
-    -- php yii migrate
+> composer install
+> php yii migrate
     
 To Import/Fetch fruits from https://fruityvice.com/
 
 Run  
-    -- path-to-php/yii fruits/fetch
+> path-to-php/yii fruits/fetch
 
 ON success it should give message like : Imported Fruits Count :
 
